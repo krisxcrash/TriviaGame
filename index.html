@@ -2,46 +2,44 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 	<title>Trivia Game</title>
 
 
 	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Arya" rel="stylesheet">
+	
 </head>
 <body>
 	<section>
-		<div class="jumbotron">
-			<h1>Trivia Game</h1>
+		<div class="container-fluid">
+			<div class="jumbotron sv-header">
+				<div id="h1-box">
+					<h1 id="h1-format"><strong>SILICON VALLEY</strong> Trivia</h1>
+				</div>
+			</div>
 		</div>
 	</section>
+
+
 	<section>
+		<div class="container-fluid">
+			<div class="quiz-section">
+				<h2>Ready?</h2>
+				<button type="button" class="btn btn-danger btn-lg" id="ready">Let's Go!</button>
+			</div>
+		</div>
+	</section>
 		<div class="quiz">
 
-		<button id="start">Start Game</button>
-		
 			<h1 id="timer"></h1>
 			<h3 class="question"></h3>
-				<ul>
-					<li class="answer"></li>
-					<li class="answer"></li>
-					<li class="answer"></li>
-					<li class="answer"></li>
-				</ul>
 		</div>
 
-	</section>
-	<section>
-		<div class="row">
-    		<div class="col-md-12" id="footer">
-      			@KXCdigital
-    		</div>
-  		</div>
-	</section>
-
-
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-
 <script type='text/javascript' src='assets/javascript/app.js'></script>
 
 </body>

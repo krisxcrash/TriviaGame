@@ -1,5 +1,29 @@
 * {
 	text-align: center;
+	font-family: 'Arya', sans-serif;
+}
+
+.sv-header {
+	background: url("../images/silicon-valley-header.jpg");
+	align-content: center;
+	padding: 10%;
+	margin: 0 auto;
+}
+
+#h1-box {
+	background: rgba(0, 0, 0, 0.7);
+	padding: 3%;
+	width: 35%;
+	margin-left: 5%;
+}
+
+#h1-format {
+	width: 100%;
+	font-family: 'Arya', sans-serif;
+	color: rgb(255, 0, 0);
+	font-weight: bolder;
+	text-align: left;
+	font-size: 4em;
 }
 
 #quiz {
@@ -9,19 +33,12 @@
 	margin: 25px 0 150px 0;
 }
 
-
-
-
-#footer {
-	font-size: 10px;
-	text-align: center;
-	color: #dddddd;
-	background: #666666;
-	border-top: 5px solid #4aaaa5;
-	position: fixed;
-	width: 110%;
-	bottom: 0;
-	grid-row-start: 2;
-	grid-row-end: 3;
-	padding: 25px 0;
+@media (min-width: @screen-sm-min) {
+	#h1-box {
+		background: rgba(0, 0, 0, 0.7);
+		padding: 3%;
+		width: 75%;
+		margin-left: 5%;
+	}
 }
+

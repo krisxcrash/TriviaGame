@@ -13,6 +13,8 @@
 
 $("#ready").click(startGame);
 
+
+
 function startGame() {
 
 }
@@ -26,5 +28,5 @@ function endGame() {
 }
 
 function startTimer() {
-	
+
 }

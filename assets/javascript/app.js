@@ -13,54 +13,54 @@
 
 var timerRunning;
 var questions = [{
-		"question": "Who said, 'My username is 'password' and my password is 'password.'",
-		"answers": ["Jared","Big Head", "Erlich", "Dinesh"],
-		"correctAnswer": "Big Head"
+		question: "Who said, 'My username is 'password' and my password is 'password.'",
+		answers: ["Jared","Big Head", "Erlich", "Dinesh"],
+		correctAnswer: "Big Head"
 	},
 	{
-		"question": "testing2",
-		"answers": "",
-		"correctAnswer": ""
+		question: "testing2",
+		answers: ["", "", "", ""],
+		correctAnswer: ""
 	},
 	{
-		"question": "testing 3",
-		"answers": "",
-		"correctAnswer": ""
+		question: "testing2",
+		answers: ["", "", "", ""],
+		correctAnswer: ""
 	},
 	{
-		"question": "",
-		"answers": "",
-		"correctAnswer": ""
+		question: "testing2",
+		answers: ["", "", "", ""],
+		correctAnswer: ""
 	},
 	{
-		"question": "",
-		"answers": "",
-		"correctAnswer": ""
+		question: "testing2",
+		answers: ["", "", "", ""],
+		correctAnswer: ""
 	},
 	{
-		"question": "",
-		"answers": "",
-		"correctAnswer": ""
+		question: "testing2",
+		answers: ["", "", "", ""],
+		correctAnswer: ""
 	},
 	{
-		"question": "",
-		"answers": "",
-		"correctAnswer": ""
+		question: "testing2",
+		answers: ["", "", "", ""],
+		correctAnswer: ""
 	},
 	{
-		"question": "",
-		"answers": "",
-		"correctAnswer": ""
+		question: "testing2",
+		answers: ["", "", "", ""],
+		correctAnswer: ""
 	},
 	{
-		"question": "",
-		"answers": "",
-		"correctAnswer": ""
+		question: "testing2",
+		answers: ["", "", "", ""],
+		correctAnswer: ""
 	},
 	{
-		"question": "",
-		"answers": "",
-		"correctAnswer": ""
+		question: "testing2",
+		answers: ["", "", "", ""],
+		correctAnswer: ""
 	}];
 
 

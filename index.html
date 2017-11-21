@@ -28,15 +28,21 @@
 	<section>
 		<div class="container-fluid">
 			<div class="quiz-section">
-				<h2>Ready?</h2>
-				<button type="button" class="btn btn-danger btn-lg" id="ready">Let's Go!</button>
+				<h2 id="ready-q">Ready?</h2>
+				<button type="button" class="btn btn-danger btn-lg" id="ready-btn">Let's Go!</button>
 			</div>
 		</div>
 	</section>
 		<div class="quiz">
 
-			<h1 id="timer"></h1>
-			<h3 class="question"></h3>
+			<h1 id="timer" class="hidden">30</h1>
+			<h3 class="question hidden" id="question-1">Lorem ipsum dolor sit amit</h3>
+				<ul class="answers-1 hidden">
+					<li id="1-a">a. </li>
+					<li id="1-b">b. </li>
+					<li id="1-c">c. </li>
+					<li id="1-d">d. </li>
+				</ul>
 		</div>
 
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>

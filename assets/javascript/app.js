@@ -13,17 +13,17 @@
 
 var timerRunning;
 var questions = [{
-		"question": "",
+		"question": "Who said, 'My username is 'password' and my password is 'password.'",
+		"answers": ["Jared","Big Head", "Erlich", "Dinesh"],
+		"correctAnswer": "Big Head"
+	},
+	{
+		"question": "testing2",
 		"answers": "",
 		"correctAnswer": ""
 	},
 	{
-		"question": "",
-		"answers": "",
-		"correctAnswer": ""
-	},
-	{
-		"question": "",
+		"question": "testing 3",
 		"answers": "",
 		"correctAnswer": ""
 	},
@@ -86,9 +86,12 @@ function startGame() {
 function triviaGame() {
 	for (var i = 0; i < questions.length; i++) {
 		var q = questions[i].question;
-	}
 	$(".trivia-questions").removeClass("hidden");
+		$("#question-div").innerHTML= q;
 	
+
+
+	}
 
 }
 

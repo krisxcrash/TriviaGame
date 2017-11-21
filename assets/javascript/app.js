@@ -12,6 +12,57 @@
 // when last question answered, display user score & giphy
 
 var timerRunning;
+var questions = [{
+		"question": "",
+		"answers": "",
+		"correctAnswer": ""
+	},
+	{
+		"question": "",
+		"answers": "",
+		"correctAnswer": ""
+	},
+	{
+		"question": "",
+		"answers": "",
+		"correctAnswer": ""
+	},
+	{
+		"question": "",
+		"answers": "",
+		"correctAnswer": ""
+	},
+	{
+		"question": "",
+		"answers": "",
+		"correctAnswer": ""
+	},
+	{
+		"question": "",
+		"answers": "",
+		"correctAnswer": ""
+	},
+	{
+		"question": "",
+		"answers": "",
+		"correctAnswer": ""
+	},
+	{
+		"question": "",
+		"answers": "",
+		"correctAnswer": ""
+	},
+	{
+		"question": "",
+		"answers": "",
+		"correctAnswer": ""
+	},
+	{
+		"question": "",
+		"answers": "",
+		"correctAnswer": ""
+	}];
+
 
 
 $(document).ready( function() {
@@ -33,7 +84,11 @@ function startGame() {
 }
 
 function triviaGame() {
-	$("#question-1").removeClass("hidden");
+	for (var i = 0; i < questions.length; i++) {
+		var q = questions[i].question;
+	}
+	$(".trivia-questions").removeClass("hidden");
+	
 
 }
 

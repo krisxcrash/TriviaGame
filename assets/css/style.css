@@ -33,12 +33,54 @@
 	margin: 25px 0 150px 0;
 }
 
-@media (min-width: @screen-sm-min) {
-	#h1-box {
-		background: rgba(0, 0, 0, 0.7);
-		padding: 3%;
-		width: 75%;
-		margin-left: 5%;
-	}
-}
-
+/*==========  Mobile First Method  ==========*/
+ 
+	/* Custom, iPhone Retina */
+	@media only screen and (min-width : 320px){
+		#h1-box {
+			background: rgba(0, 0, 0, 0.7);
+			padding: 3%;
+			width: 85%;
+			margin-left: 5%;
+		}
+		   }
+		
+		   /* Extra Small Devices, Phones */
+		   @media only screen and (min-width : 480px){
+			#h1-box {
+				background: rgba(0, 0, 0, 0.7);
+				padding: 3%;
+				width: 50%;
+				margin-left: 5%;
+			}
+		   }
+		
+		   /* Small Devices, Tablets */
+		   @media only screen and (min-width : 768px){
+			#h1-box {
+				background: rgba(0, 0, 0, 0.7);
+				padding: 3%;
+				width: 40%;
+				margin-left: 5%;
+			}
+		   }
+		
+		   /* Medium Devices, Desktops */
+		   @media only screen and (min-width : 992px){
+			#h1-box {
+				background: rgba(0, 0, 0, 0.7);
+				padding: 3%;
+				width: 35%;
+				margin-left: 5%;
+			}
+		   }
+		
+		   /* Large Devices, Wide Screens */
+		   @media only screen and (min-width : 1200px){
+			#h1-box {
+				background: rgba(0, 0, 0, 0.7);
+				padding: 3%;
+				width: 35%;
+				margin-left: 5%;
+			}
+		   }

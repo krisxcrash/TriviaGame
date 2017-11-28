@@ -90,7 +90,21 @@ const myQuestions = [{
 	correctAnswer: "a"
 }, ];
 
+
+$("#ready-btn").click(function() {
+
+function showHide() {
+	$("#ready-q").addClass("hidden");
+	$("#ready-btn").addClass("hidden");
+	$(".quiz-container").removeClass("hidden");
+	$("#next").removeClass("hidden");
+	$("#previous").removeClass("hidden");
+	$("#submit").removeClass("hidden");
+}
+
 function buildQuiz() {
+	showHide();
+
 	const output = [];
 	myQuestions.forEach(
 		(currentQuestion, questionNumber) => {
@@ -165,3 +179,5 @@ showSlide(0);
 submitButton.addEventListener("click", showResults);
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
+
+});

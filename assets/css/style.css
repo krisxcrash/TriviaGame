@@ -45,7 +45,22 @@
 	height: 200px;
 	margin-top: 40px;
   }
-  
+  .question{
+	color: #ccc;
+	font-size: 3em;
+	margin-bottom: 10px;
+  }
+  .answers {
+	color: #ccc;
+	font-size: 1.5em;
+	margin-bottom: 20px;
+	text-align: left;
+	display: inline-block;
+  }
+  .answers label{
+	display: block;
+	margin-bottom: 10px;
+  }
 
 /* #quiz {
 	background-color: #ccc;

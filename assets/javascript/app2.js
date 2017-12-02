@@ -140,7 +140,17 @@ function showResults() {
 	});
 	resultsContainer.innerHTML = numCorrect + ' out of ' + myQuestions.length;
 }
+
 let currentSlide = 0;
+
+function showNextSlide() {
+	showSlide(currentSlide + 1);
+	console.log("it works");
+}
+
+function showPreviousSlide() {
+	showSlide(currentSlide - 1);
+}
 
 function showSlide(n) {
 	slides[currentSlide].classList.remove('active-slide');
@@ -160,13 +170,6 @@ function showSlide(n) {
 	}
 }
 
-function showNextSlide() {
-	showSlide(currentSlide + 1);
-}
-
-function showPreviousSlide() {
-	showSlide(currentSlide - 1);
-}
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');

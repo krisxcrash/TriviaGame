@@ -1,5 +1,5 @@
 const myQuestions = [{
-	question: `Who said, "My username is 'password' and my password is 'password'"?`,
+	question: `Who said, "My username is 'password' and my password is 'password'."?`,
 	answers: {
 		a: "Jared",
 		b: "Big Head",
@@ -179,5 +179,6 @@ showSlide(0);
 submitButton.addEventListener("click", showResults);
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
+
 
 });

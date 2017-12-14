@@ -26,48 +26,27 @@
 	font-size: 4em;
 }
 
-/* Quiz Slides */
-.slide{
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	z-index: 1;
-	opacity: 0;
-	transition: opacity 0.5s;
-  }
-  .active-slide{
-	opacity: 1;
-	z-index: 2;
-  }
-  .quiz-container{
-	position: relative;
-	height: 200px;
-	margin-top: 40px;
-  }
-  .question{
-	color: #ccc;
-	font-size: 3em;
-	margin-bottom: 10px;
-  }
-  .answers {
-	color: #ccc;
-	font-size: 1.3em;
-	margin-bottom: 20px;
-	text-align: left;
-	display: inline-block;
-  }
-  .answers label{
-	display: block;
-	margin-bottom: 10px;
-  }
+#start {
+	margin-top: 2%;
+}
 
-/* #quiz {
-	background-color: #ccc;
-	width: 500px;
-	height: 500px;
-	margin: 25px 0 150px 0;
-} */
+h3 {
+	padding-top: 2%;
+}
+
+.btn-answers {
+	margin: 1%;
+}
+
+#timer {
+	padding-top: 2%;
+}
+
+#counter-number {
+	margin-top: 3%;
+	border: 1px solid red;
+	padding: 0 6%;
+}
 
 /*==========  Mobile First Method  ==========*/
  
@@ -79,6 +58,11 @@
 			width: 85%;
 			margin-left: 5%;
 		}
+		#counter-number {
+			margin-top: 2%;
+			border: 1px solid red;
+			padding: 0 6%;
+		}
 		   }
 		
 		   /* Extra Small Devices, Phones */
@@ -88,6 +72,11 @@
 				padding: 3%;
 				width: 50%;
 				margin-left: 5%;
+			}
+			#counter-number {
+				margin-top: 2%;
+				border: 1px solid red;
+				padding: 0 6%;
 			}
 		   }
 		
@@ -99,6 +88,11 @@
 				width: 40%;
 				margin-left: 5%;
 			}
+			#counter-number {
+				margin-top: 2%;
+				border: 1px solid red;
+				padding: 0 4%;
+			}
 		   }
 		
 		   /* Medium Devices, Desktops */
@@ -109,6 +103,11 @@
 				width: 35%;
 				margin-left: 5%;
 			}
+			#counter-number {
+				margin-top: 2%;
+				border: 1px solid red;
+				padding: 0 6%;
+			}
 		   }
 		
 		   /* Large Devices, Wide Screens */
@@ -118,5 +117,10 @@
 				padding: 3%;
 				width: 35%;
 				margin-left: 5%;
+			}
+			#counter-number {
+				margin-top: 2%;
+				border: 1px solid red;
+				padding: 0 3%;
 			}
 		   }

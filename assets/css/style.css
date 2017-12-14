@@ -3,6 +3,10 @@
 	font-family: 'Arya', sans-serif;
 }
 
+.container-fluid {
+	padding: 0;
+}
+
 .sv-header {
 	background: url("../images/silicon-valley-header.jpg");
 	align-content: center;

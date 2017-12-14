@@ -84,6 +84,7 @@ var game = {
 		this.counter = window.countStartNumber;
 		$("#counter-number").html(this.counter);
 		this.currentQuestion++;
+		console.log(this);
 		this.loadQuestion.bind(this)();
 	},
 	timeUp: function() {
@@ -98,7 +99,8 @@ var game = {
 			setTimeout(this.results, 3 * 1000);
 		}
 		else {
-			setTimeout(this.nextQuestion, 5 * 1000);
+			console.log(this);
+			setTimeout(this.nextQuestion, 2 * 1000);
 		}
 	},
 	results: function() {

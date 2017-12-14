@@ -88,6 +88,30 @@ var game = {
 		this.loadQuestion.bind(this)();
 	},
 	timeUp: function() {
-		
-	}
+		clearInterval(window.timer);
+		$("#counter-number").html(this.counter);
+
+		panel.html("<h2>Out of Time!</h2>");
+		panel.append("<h3>The Correct Answer wsa: " + questions[this.currentQuestion].correctAnswer);
+		panel.append("<img src='" + questions[this.currentQuestion].image + "' />");
+
+		if (this.currentQuestion === questions.length -1) {
+			setTimeout(this.results, 3 * 1000);
+		}
+		else {
+			setTimeout(this.nextQuestion, 3 * 1000);
+		}
+	},
+	results: function() {
+		clearInterval(window.timer);
+		panel.html("<h2>Here's how you did! </h2>");
+
+		$("#counter-number").html(this.counter);
+
+		panel.append("<h3>Correct Answers: " + this.correct + "</h3>");
+		panel.append("<h3> Incorrect Answers: " + this.incorrect + "</h3>");
+		panel.append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
+		panel.append("<br><button id='start-over'>Start Over</button>");
+	},
+	
 }

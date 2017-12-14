@@ -2,7 +2,7 @@
 var panel = $("#quiz-area");
 var countStartNumber = 30;
 
-var myQuestions = [{
+var questions = [{
 	question: `Who said, "My username is 'password' and my password is 'password'."?`,
 	answers: ["Jared", "Big Head","Erlich","Dinesh"],
 	correctAnswer: "Big Head",
@@ -54,3 +54,40 @@ var myQuestions = [{
 	image: "https://gph.is/1yrDfcF"
 }, ];
 
+var timer;
+
+var game = {
+	questions: questions,
+	currentQuestions: 0,
+	counter: countStartNumber,
+	correct: 0,
+	incorrect: 0,
+
+	countdown: function() {
+		this.counter--;
+		$("#counter-number").html(this.counter);
+		if (this.counter === 0) {
+			console.log("time's up!");
+			this.timeUp();
+		}
+	},
+	loadQuestion: function() {
+		timer = setInterval(this.countdown.bind(this), 1000);
+
+		panel.html("<h2 class='h2-q'>" + questions[this.currentQuestion].question + "</h2>");
+
+		for (var i = 0; questions[this.currentQuestion].answers.length; i++ ) {
+			panel.append("<button class='btn btn-lg btn-alert answer-button' id='button' data-name='" + questions[this.currentQuestion].answers[i]
+			+ "'>" + questions[this.currentQuestion].answers[i] + "</button>");
+		}
+	},
+	nextQuestion: function() {
+		this.counter = window.countStartNumber;
+		$("#counter-number").html(this.counter);
+		this.currentQuestion++;
+		this.loadQuestion.bind(this)();
+	},
+	timeUp: function() {
+		
+	}
+}

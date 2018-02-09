@@ -170,6 +170,7 @@ $(document).on("click", ".answer-button", function(e) {
 	game.clicked.bind(game, e)();
 });
 $(document).on("click", "#start", function() {
+	$('.sv-header').addClass("hidden");
 	$("#ready").addClass("hidden");
 	$("#sub-wrapper").prepend("<h1 id='timer'><span id='counter-number'>30</span></h1>");
 	game.loadQuestion.bind(game)();

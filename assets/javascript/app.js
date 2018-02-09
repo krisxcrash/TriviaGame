@@ -158,7 +158,7 @@ var game = {
 	},
 	reset: function() {
 		this.currentQuestion = 0;
-		this.counter = 0;
+		this.counter = 30;
 		this.correct = 0;
 		this.incorrect = 0;
 		this.loadQuestion();
